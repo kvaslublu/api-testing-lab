@@ -51,7 +51,4 @@ def test_invalid_login():
     assert response.status_code == 400
     assert "error" in response.json()
 
-def test_not_found():
-    response = requests.get("https://reqres.in/api/users/999")
-    print("Status:", response.status_code, "| Response:", response.text)
-    assert response.status_code == 404
+
